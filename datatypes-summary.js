@@ -34,13 +34,39 @@ const myFunction = function() {
     console.log("Hemllo Worlmd!");
 }
 
-console.log("score: " + typeof(score));
-console.log("scoreValue: " + typeof(scoreValue));
-console.log("isLoggedIn: " + typeof(isLoggedIn));
-console.log("outsideTemp: " + typeof(outsideTemp));
-console.log("userEmail: " + typeof(userEmail));
-console.log("id: " + typeof(id));
-console.log("anotherId: " + typeof(anotherId));
-console.log("heros: " + typeof(heros));
-console.log("myObj: " + typeof(myObj));
-console.log("myFunction: " + typeof(myFunction));
+// console.log("score: " + typeof(score));
+// console.log("scoreValue: " + typeof(scoreValue));
+// console.log("isLoggedIn: " + typeof(isLoggedIn));
+// console.log("outsideTemp: " + typeof(outsideTemp));
+// console.log("userEmail: " + typeof(userEmail));
+// console.log("id: " + typeof(id));
+// console.log("anotherId: " + typeof(anotherId));
+// console.log("heros: " + typeof(heros));
+// console.log("myObj: " + typeof(myObj));
+// console.log("myFunction: " + typeof(myFunction));
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive) , Heap (Non-Primitive)
+
+let myYoutubeName = "Cheems";
+
+let anotherName = myYoutubeName;
+anotherName = "Doge";
+
+console.log(myYoutubeName);
+console.log(anotherName);
+
+
+let userOne = {
+    email: "doge@cheems.com",
+    upi: "doge@ybl",
+};
+
+let userTwo = userOne;
+
+userTwo.email = "cheems@doge.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
